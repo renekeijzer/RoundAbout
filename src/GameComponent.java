@@ -7,6 +7,7 @@ public abstract class GameComponent implements MovableGameObject {
 	private boolean AbG;
 	private boolean grounded;
 	
+	public void setGrounded(boolean grounded){this.grounded = grounded;}
 	public void setAbG(boolean abg){this.AbG = abg;}
 	
 	protected Vector2f Position;

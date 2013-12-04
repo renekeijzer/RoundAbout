@@ -1,11 +1,13 @@
+import java.util.ArrayList;
+
 
 public class CollisionDetectionService {
 	
 	
-	private Components component;
-	public CollisionDetectionService(Components component)
+	private ArrayList<ArrayList<Block>> map;
+	public CollisionDetectionService(ArrayList<ArrayList<Block>> map, Player player)
 	{
-		this.component = component;
+		this.map = map;
 		
 	}
 	
@@ -20,8 +22,9 @@ public class CollisionDetectionService {
 		
 	}
 	
-	public void Handlecollision()
+	public void Handlecollision(ArrayList<ArrayList<Block>> Map, Player player)
 	{
+		
 		
 	}
 	
@@ -30,5 +33,10 @@ public class CollisionDetectionService {
 		
 	}
 	
+	public  ArrayList<ArrayList<Block>> UpdateMap(GameComponent a, GameComponent b)
+	{
+		
+		return map;
+	}
 	
 }

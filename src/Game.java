@@ -23,7 +23,7 @@ public class Game {
 		components = new Components();
 		gl = new LevelGenerator(1);
 		components = gl.GenerateLevel(1, components);
-		CollisionDetectionService cds = new CollisionDetectionService(components);
+	//	CollisionDetectionService cds = new CollisionDetectionService();
 		
 		initGl(RAS.WINDOWHEIHGT, RAS.WINDOWWIDTH);
 
@@ -44,7 +44,7 @@ public class Game {
 		while(!Display.isCloseRequested());
 	}
 	public void updateFPS() {
-	    
+	  
 		if (getTime() - lastFPS > 1000) {
 	        Display.setTitle("FPS: " + fps);
 		fps = 0;
